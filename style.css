@@ -1,0 +1,181 @@
+/* Reset stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(#302C2B, #060606);
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Logica di visione delle schermate */
+.schermata-opzioni,
+.schermata-caricamento,
+.schermata-risultati {
+    display: none;
+}
+
+/*
+.schermata .schermata-opzioni {
+    display: block;
+}
+*/
+
+/* Header */
+header {
+    text-align: center;
+}
+
+.app-logo {
+    max-width: 100%;
+    margin: 8px 0;
+    border-radius: 16px;
+}
+
+/* Schermata delle opzioni */
+
+/* Schede delle opzioni */
+.scheda {
+    background-color:  #E7CEB0;
+    border: 1px solid #F1EBB7;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.scheda-titolo {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 24px;
+    background-color: #E9F2FF;
+    color: #E7CEB0;
+    font-size: 18px;
+    outline: none;
+}
+
+input:focus {
+    color: #560019;
+}
+
+/* Selezione tipo cucina */
+.selezione-tipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.selezione-tipo-pulsante {
+    border: 1px solid #560019;
+    padding: 8px;
+    width: calc(50% - 4px);
+    border-radius: 24px;
+    color: #560019;
+    font-size: 18px;
+    text-align: center;
+}
+
+.selezione-tipo-pulsante:has(:checked){
+    background-color: #560019;
+    color: #ffffff;
+    border-color: #560019;
+}
+
+.selezione-tipo-pulsante-input {
+    display: none;
+}
+
+/* Selezione numero persone */
+.selezione-persone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contatore-persone-bottone {
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #560019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatore-persone {
+    font-size: 56px;
+    font-weight: 500;
+    color: #560019;
+}
+
+/* Bottone crea */ 
+.bottone-crea {
+    margin-top: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #560019;
+    color: #d9ff66;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: "Unbounded", sans-serif;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Schermata di caricamento */
+.schermata-caricamento {
+    text-align: center;
+    margin-top: 50px;
+    animation: pulsa 0.7s infinite alternate;
+}
+
+@keyframes pulsa {
+    from {
+        scale: 0.1;
+    }
+    to {
+        scale: 0.2;
+    }
+}
+
+/* Schermata dei risultati */
+.scheda-titolo-risultati {
+    color: #560019;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.ricetta {
+    color: #000000;
+    margin-top: 8px;
+}
+
+.ricetta h4 {
+    font-weight: 600;
+}

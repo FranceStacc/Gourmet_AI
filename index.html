@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gourmet AI</title>
+        
+        <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- App header -->
+            <header>
+                <img class="app-logo" src="img/logo.png" alt="App logo">
+            </header>
+            <main class="schermata">
+                <!-- Schermata delle opzioni -->
+                <div class="schermata-opzioni">
+
+                    <!-- Scheda ingradienti disponibili -->
+                    <div class="scheda">
+                        <h3 class="scheda-titolo">Quali ingradienti hai?</h3>
+                        <input type="text" value="Pasta, guanciale, uova" placeholder="Inserisci gli ingradienti">
+                    </div>
+
+                    <!-- Scheda tipo cucina -->
+                    <div class="scheda">
+                        <h3 class="scheda-titolo">Tipo di cucina?</h3>
+                        <div class="selezione-tipo">
+                            <label class="selezione-tipo-pulsante">
+                                Italiana
+                                <input class="selezione-tipo-pulsante-input" type="radio" name="type" value="Italiana" checked>
+                            </label>
+                            <label class="selezione-tipo-pulsante">
+                                Marocchina
+                                <input class="selezione-tipo-pulsante-input" type="radio" name="type" value="Marocchina">
+                            </label>
+                            <label class="selezione-tipo-pulsante">
+                                Tailandese
+                                <input class="selezione-tipo-pulsante-input" type="radio" name="type" value="Tailandese">
+                            </label>
+                            <label class="selezione-tipo-pulsante">
+                                Giapponese
+                                <input class="selezione-tipo-pulsante-input" type="radio" name="type" value="Giapponese">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Scheda numero persone -->
+                    <div class="scheda">
+                        <h3 class="scheda-titolo">Per quante persone?</h3>
+                        <div class="selezione-persone">
+                            <button class="contatore-persone-bottone">
+                                <img src="img/remove.svg" alt="Decrementa persone">
+                            </button>
+                            <div class="contatore-persone">
+                                1
+                            </div>
+                            <button class="contatore-persone-bottone">
+                                <img src="img/add.svg" alt="Incrementa persone">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottone crea ricetta -->
+                    <button class="bottone-crea">
+                        <img src="img/sparkle.svg" alt="Sparkle">
+                        Crea ricetta
+                    </button>
+                </div>
+
+                <!-- Schermata di caricamento -->
+                <div class="schermata-caricamento">
+                    <img src="img/icon.png" alt="Logo app">
+                </div>
+
+                <!-- Schermata dei risultati -->
+                <div class="schermata-risultati">
+                    
+                    <!-- Ricetta 1 -->
+                    <div class="scheda">
+                        <h3 class="scheda-titolo scheda-titolo-risultati">Pasta carbonara</h3>
+                        <div class="ricetta">
+                            <h4>Informazioni</h4>
+                            <p>Descrizione della ricetta</p>
+                        </div>
+                        <div class="ricetta">
+                            <h4>Preparazione</h4>
+                            <p>Descrizione della ricetta</p>
+                        </div>
+                    </div>
+
+                    <!-- Ricetta 2 -->
+                    <div class="scheda">
+                        <h3 class="scheda-titolo scheda-titolo-risultati">Pasta carbonara 2</h3>
+                        <div class="ricetta">
+                            <h4>Informazioni</h4>
+                            <p>Descrizione della ricetta</p>
+                        </div>
+                        <div class="ricetta">
+                            <h4>Preparazione</h4>
+                            <p>Descrizione della ricetta</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottone nuova ricetta -->
+                    <button class="bottone-crea">
+                        Crea nuova ricetta
+                    </button>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
