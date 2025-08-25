@@ -19,14 +19,14 @@
             <header>
                 <img class="app-logo" src="img/logo.png" alt="App logo">
             </header>
-            <main class="schermata">
+            <main class="opzioni">
                 <!-- Schermata delle opzioni -->
                 <div class="schermata-opzioni">
 
                     <!-- Scheda ingradienti disponibili -->
                     <div class="scheda">
                         <h3 class="scheda-titolo">Quali ingradienti hai?</h3>
-                        <input type="text" value="Pasta, guanciale, uova" placeholder="Inserisci gli ingradienti">
+                        <input id="ingr" type="text" value="Pasta, guanciale, uova" placeholder="Inserisci gli ingradienti">
                     </div>
 
                     <!-- Scheda tipo cucina -->
@@ -56,20 +56,20 @@
                     <div class="scheda">
                         <h3 class="scheda-titolo">Per quante persone?</h3>
                         <div class="selezione-persone">
-                            <button class="contatore-persone-bottone">
+                            <button id="decr-pers" class="contatore-persone-bottone">
                                 <img src="img/remove.svg" alt="Decrementa persone">
                             </button>
-                            <div class="contatore-persone">
+                            <div id="cont-pers" class="contatore-persone">
                                 1
                             </div>
-                            <button class="contatore-persone-bottone">
+                            <button id="incr-pers" class="contatore-persone-bottone">
                                 <img src="img/add.svg" alt="Incrementa persone">
                             </button>
                         </div>
                     </div>
                     
                     <!-- Bottone crea ricetta -->
-                    <button class="bottone-crea">
+                    <button id="crea" class="bottone-crea">
                         <img src="img/sparkle.svg" alt="Sparkle">
                         Crea ricetta
                     </button>
@@ -82,39 +82,17 @@
 
                 <!-- Schermata dei risultati -->
                 <div class="schermata-risultati">
+                    <div id="contieni-ris"></div>
                     
-                    <!-- Ricetta 1 -->
-                    <div class="scheda">
-                        <h3 class="scheda-titolo scheda-titolo-risultati">Pasta carbonara</h3>
-                        <div class="ricetta">
-                            <h4>Informazioni</h4>
-                            <p>Descrizione della ricetta</p>
-                        </div>
-                        <div class="ricetta">
-                            <h4>Preparazione</h4>
-                            <p>Descrizione della ricetta</p>
-                        </div>
-                    </div>
-
-                    <!-- Ricetta 2 -->
-                    <div class="scheda">
-                        <h3 class="scheda-titolo scheda-titolo-risultati">Pasta carbonara 2</h3>
-                        <div class="ricetta">
-                            <h4>Informazioni</h4>
-                            <p>Descrizione della ricetta</p>
-                        </div>
-                        <div class="ricetta">
-                            <h4>Preparazione</h4>
-                            <p>Descrizione della ricetta</p>
-                        </div>
-                    </div>
-
                     <!-- Bottone nuova ricetta -->
-                    <button class="bottone-crea">
+                    <button id="crea-nuovo" class="bottone-crea">
                         Crea nuova ricetta
                     </button>
                 </div>
             </main>
         </div>
+
+        <!-- Caricamento scipt per la parte dinamica -->
+        <script src="script.js"></script>
     </body>
 </html>
